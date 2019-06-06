@@ -1,1 +1,30 @@
 // Navigation Styles here
+header {
+    width: 100%;
+    border-bottom: 2px dashed silver;
+
+    text-align: center;
+    color: @font-color;
+    padding: 20px;
+
+    section {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+
+        .flex(space-around, baseline);
+
+        .logo {}
+
+        nav {
+            .flex(space-evenly, flex-end);
+            font-size: 2rem;
+
+            a {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+        }
+    }
+
+}
