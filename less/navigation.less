@@ -2,23 +2,32 @@
 header {
     width: 100%;
     border-bottom: 2px dashed silver;
-
     text-align: center;
-    color: @font-color;
     padding: 20px;
 
-    section {
-        max-width: 800px;
-        width: 100%;
-        margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
 
-        .flex(space-between, center);
+    .flex(row, space-between, center);
 
-        nav {
-            width: 49%;
-            .flex(space-evenly, center);
-            font-size: 1.5rem;
-            margin-bottom: 10px;
+    @media @mobile {
+        .flex(column, space-between, center);
+
+    }
+
+    nav {
+        width: 49%;
+        .flex(row, space-evenly, center);
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+
+        @media @mobile {
+            margin-top: 20px;
+            margin-bottom: 1px;
+            width: 100%;
+
+
         }
     }
 
