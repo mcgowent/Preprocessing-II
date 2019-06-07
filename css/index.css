@@ -224,6 +224,7 @@ header nav {
 }
 .home .header_section {
   padding-bottom: 10px;
+  border-bottom: 2px dashed silver;
 }
 @media (max-width: 500px) {
   .home .header_section {
