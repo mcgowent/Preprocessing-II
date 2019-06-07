@@ -173,16 +173,15 @@ img {
   margin: 0 auto;
 }
 header {
-  border-bottom: 2px dashed silver;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
   padding: 20px;
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
 }
 @media (max-width: 500px) {
   header {
@@ -219,8 +218,11 @@ header nav {
   font-size: 1.6rem;
   padding: 20px;
 }
-.home .header_section {
+.dotted_line {
   border-bottom: 2px dashed silver;
+  width: 100vw;
+}
+.home .header_section {
   padding-bottom: 10px;
 }
 @media (max-width: 500px) {

@@ -1,9 +1,12 @@
+.dotted_line {
+  border-bottom: 2px dashed silver;
+  width: 100vw;
+}
+
 .home {
 
   .header_section {
-    border-bottom: 2px dashed silver;
     padding-bottom: 10px;
-    ;
 
     @media @mobile {
       margin-left: 20px;
@@ -12,7 +15,6 @@
 
     h2 {
       margin-top: 20px;
-
     }
   }
 
@@ -22,17 +24,12 @@
     .flex(row, space-between, center);
     flex-wrap: wrap;
 
-
     @media @mobile {
       margin-left: 20px;
       margin-right: 20px;
 
       .flex(column, center, center);
-
-
     }
-
-
 
     .text-content {
       width: 48%;
@@ -64,7 +61,6 @@
   }
 
   .inverse-content {
-
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
@@ -95,7 +91,6 @@
 
     @media @mobile {
       width: 93%;
-
     }
 
     img {
